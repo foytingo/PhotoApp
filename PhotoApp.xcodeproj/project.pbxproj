@@ -13,8 +13,9 @@
 		462F31BB255A9EE600A7D099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462F31B9255A9EE600A7D099 /* Main.storyboard */; };
 		462F31BD255A9EE700A7D099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462F31BC255A9EE700A7D099 /* Assets.xcassets */; };
 		462F31C0255A9EE700A7D099 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462F31BE255A9EE700A7D099 /* LaunchScreen.storyboard */; };
-		462F31CB255A9EE700A7D099 /* PhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462F31CA255A9EE700A7D099 /* PhotoAppTests.swift */; };
 		462F31D6255A9EE800A7D099 /* PhotoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462F31D5255A9EE800A7D099 /* PhotoAppUITests.swift */; };
+		462F31EA255AC0D600A7D099 /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462F31E9255AC0D600A7D099 /* SignupFormModelValidatorTests.swift */; };
+		462F31F2255AC19A00A7D099 /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462F31F1255AC19A00A7D099 /* SignupFormModelValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +45,12 @@
 		462F31BF255A9EE700A7D099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		462F31C1255A9EE700A7D099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		462F31C6255A9EE700A7D099 /* PhotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		462F31CA255A9EE700A7D099 /* PhotoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppTests.swift; sourceTree = "<group>"; };
 		462F31CC255A9EE700A7D099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		462F31D1255A9EE800A7D099 /* PhotoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		462F31D5255A9EE800A7D099 /* PhotoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITests.swift; sourceTree = "<group>"; };
 		462F31D7255A9EE800A7D099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		462F31E9255AC0D600A7D099 /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
+		462F31F1255AC19A00A7D099 /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				462F31BC255A9EE700A7D099 /* Assets.xcassets */,
 				462F31BE255A9EE700A7D099 /* LaunchScreen.storyboard */,
 				462F31C1255A9EE700A7D099 /* Info.plist */,
+				462F31F1255AC19A00A7D099 /* SignupFormModelValidator.swift */,
 			);
 			path = PhotoApp;
 			sourceTree = "<group>";
@@ -113,8 +116,8 @@
 		462F31C9255A9EE700A7D099 /* PhotoAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				462F31CA255A9EE700A7D099 /* PhotoAppTests.swift */,
 				462F31CC255A9EE700A7D099 /* Info.plist */,
+				462F31E9255AC0D600A7D099 /* SignupFormModelValidatorTests.swift */,
 			);
 			path = PhotoAppTests;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 					};
 					462F31C5255A9EE700A7D099 = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 						TestTargetID = 462F31AF255A9EE600A7D099;
 					};
 					462F31D0255A9EE800A7D099 = {
@@ -260,6 +264,7 @@
 			files = (
 				462F31B8255A9EE600A7D099 /* ViewController.swift in Sources */,
 				462F31B4255A9EE600A7D099 /* AppDelegate.swift in Sources */,
+				462F31F2255AC19A00A7D099 /* SignupFormModelValidator.swift in Sources */,
 				462F31B6255A9EE600A7D099 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				462F31CB255A9EE700A7D099 /* PhotoAppTests.swift in Sources */,
+				462F31EA255AC0D600A7D099 /* SignupFormModelValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +479,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FP28BF586;
 				INFOPLIST_FILE = PhotoAppTests/Info.plist;
@@ -485,6 +491,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.foytingo.PhotoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoApp.app/PhotoApp";
@@ -496,6 +503,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FP28BF586;
 				INFOPLIST_FILE = PhotoAppTests/Info.plist;
