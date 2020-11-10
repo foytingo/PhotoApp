@@ -18,4 +18,15 @@ class SignupFormModelValidator {
         
         return returnValue
     }
+    
+    
+    func isLastNameValid(lastName: String) -> Bool {
+        var returnValue = true
+        
+        if lastName.isEmpty {
+            returnValue = false
+        }
+        
+        return returnValue
+    }
 }
