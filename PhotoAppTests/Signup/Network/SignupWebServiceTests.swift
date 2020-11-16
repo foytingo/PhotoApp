@@ -21,16 +21,15 @@ class SignupWebServiceTests: XCTestCase {
         sut = SignupWebService(urlString: SignupConstants.signupURLString, urlSession: urlSession)
         
         signFormRequestModel = SignupFormRequestModel(firstName: "Murat", lastName: "Baykor", email: "murat@foytingo.com", password: "123456789")
-        
     }
 
     override func tearDown() {
-        
         sut = nil
         signFormRequestModel = nil
         MockURLProtocol.stubResponseData = nil
     }
 
+    
     func testSignupWebService_WhenGivenSuccessfullResponse_ReturnSuccess() {
         
         //Arrange
@@ -60,10 +59,29 @@ class SignupWebServiceTests: XCTestCase {
         sut.signup(withForm: signFormRequestModel) { (signupResponseModel, error) in
             //Assert
             XCTAssertNil(signupResponseModel, "The response model for a request containing unknown JSON response, should have been nil")
-            XCTAssertEqual(error, SingupErrors.responseModelParsingError, "The signup() method did not return expected error")
+            XCTAssertEqual(error, SignupError.responseModelParsing, "The signup() method did not return expected error")
             expectation.fulfill()
         }
         self.wait(for: [expectation], timeout: 5)
+    }
+    
+    
+    func testSignupWebService_WhenEmptyURLStringProvided_ReturnsError() {
+        
+        //Arrange
+        let expectation = self.expectation(description: "An empty request URL string expectation")
+        
+        sut = SignupWebService(urlString: "")
+        
+        //Act
+        sut.signup(withForm: signFormRequestModel) { (signupResponseModel, error) in
+            XCTAssertEqual(error, SignupError.invalidRequestURLString, "The signup() method did not return an expected error for an invalidRequestURLString error")
+            XCTAssertNil(signupResponseModel, "When an invalidRequestURLString takes place, the response model must be nil")
+            expectation.fulfill()
+        }
+        
+        //Assert
+        self.wait(for: [expectation], timeout: 2)
     }
     
 }
