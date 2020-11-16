@@ -89,7 +89,7 @@ class SignupFormModelValidatorTests: XCTestCase {
         
         //Arrange
         //Act
-        let isPasswordValid = sut.isPasswordValid(password: "123456")
+        let isPasswordValid = sut.isPasswordValid(password: "12345678")
         
         //Assert
         XCTAssertTrue(isPasswordValid, "The isPasswordValid() should have returned TRUE for a valid password but returned FALSE")
