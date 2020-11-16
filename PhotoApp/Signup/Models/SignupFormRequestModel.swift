@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SignupFormRequestModel: Codable {
+struct SignupFormRequestModel: Encodable {
     let firstName: String
     let lastName: String
     let email: String

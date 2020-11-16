@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct SingupResponseModel: Codable {
-    
+struct SingupResponseModel: Decodable {
+    let status: String
 }

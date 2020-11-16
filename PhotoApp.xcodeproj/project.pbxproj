@@ -22,6 +22,7 @@
 		465CE78B2562AC58007F3C7C /* SignupFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CE78A2562AC58007F3C7C /* SignupFormRequestModel.swift */; };
 		465CE7902562AE9E007F3C7C /* SingupResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CE78F2562AE9E007F3C7C /* SingupResponseModel.swift */; };
 		465CE7952562AEEC007F3C7C /* SingupErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CE7942562AEEC007F3C7C /* SingupErrors.swift */; };
+		465CE7A42562BA19007F3C7C /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CE7A32562BA19007F3C7C /* MockURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		465CE78A2562AC58007F3C7C /* SignupFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormRequestModel.swift; sourceTree = "<group>"; };
 		465CE78F2562AE9E007F3C7C /* SingupResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingupResponseModel.swift; sourceTree = "<group>"; };
 		465CE7942562AEEC007F3C7C /* SingupErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingupErrors.swift; sourceTree = "<group>"; };
+		465CE7A32562BA19007F3C7C /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			children = (
 				465CE79F2562B01F007F3C7C /* Network */,
 				465CE79E2562B01B007F3C7C /* Models */,
+				465CE7A32562BA19007F3C7C /* MockURLProtocol.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				465CE7A42562BA19007F3C7C /* MockURLProtocol.swift in Sources */,
 				465CE7812562AAE6007F3C7C /* SignupWebServiceTests.swift in Sources */,
 				462F31EA255AC0D600A7D099 /* SignupFormModelValidatorTests.swift in Sources */,
 			);
