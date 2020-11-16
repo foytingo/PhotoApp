@@ -35,7 +35,7 @@ class SignupWebService {
             if let data = data, let signupResponseModel = try? JSONDecoder().decode(SingupResponseModel.self, from: data) {
                 completionHandler(signupResponseModel, nil)
             } else {
-                //TODO: Create a new Init Test to handle an error here
+                completionHandler(nil, SingupErrors.responseModelParsingError)
             }
         }
         
