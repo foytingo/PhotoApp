@@ -125,6 +125,15 @@ class SignupFormModelValidatorTests: XCTestCase {
         XCTAssertTrue(isPasswordValid, "The isPasswordTypeCheck() should have TRUE for  passwords match but it has returned FALSE")
     }
     
+    func testSignFormModelValidator_WhenNotEqualCheckPassword_ShouldReturnFalse() {
+        
+        //Arrange
+        //Act
+        let isPasswordValid = sut.isPasswordTypeCheck(password: "123456", repatedPassword: "654321")
+        
+        //Assert
+        XCTAssertFalse(isPasswordValid, "The isPasswordTypeCheck() should have FALSE for passwords match but it has returned TRUE")
+    }
     
     func testSignFormModelValidator_WhenValidEmailProvided_ShouldReturnTrue() {
         
