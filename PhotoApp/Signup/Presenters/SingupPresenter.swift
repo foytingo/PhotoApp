@@ -11,10 +11,12 @@ class SingupPresenter {
     
     private var formModelValidator: SignupModelValidatorProtocol
     private var webService: SignupWebServiceProtocol
+    private weak var delegate: SignupViewDelegateProtocol?
     
-    init(formModelValidator: SignupModelValidatorProtocol, webService: SignupWebServiceProtocol) {
+    init(formModelValidator: SignupModelValidatorProtocol, webService: SignupWebServiceProtocol, delegate: SignupViewDelegateProtocol) {
         self.formModelValidator = formModelValidator
         self.webService = webService
+        self.delegate = delegate
     }
     
     func proccessUserSignup(formModel: SignupFormModel){
@@ -39,8 +41,11 @@ class SingupPresenter {
         }
         let requestModel = SignupFormRequestModel(firstName: formModel.firstName, lastName: formModel.lastName, email: formModel.email, password: formModel.password)
         
-        webService.signup(withForm: requestModel) { (responseModel, error) in
-            //TODO
+        webService.signup(withForm: requestModel) { [weak self](responseModel, error) in
+            if responseModel != nil {
+                self?.delegate?.successfullSignup()
+                return
+            }
         }
         
     }
