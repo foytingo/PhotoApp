@@ -29,10 +29,10 @@ class SignupPresenterTests: XCTestCase {
         sut.proccessUserSignup(formModel: signupFormModel)
         
         //Assert
-        XCTAssertTrue(mockSignupModelValidator.isFirstnameValidated)
-        XCTAssertTrue(mockSignupModelValidator.isLastNameValidated)
-        XCTAssertTrue(mockSignupModelValidator.isEmailValidated)
-        XCTAssertTrue(mockSignupModelValidator.isPasswordValidated)
-        XCTAssertTrue(mockSignupModelValidator.isRepeatedPasswordValidated)
+        XCTAssertTrue(mockSignupModelValidator.isFirstnameValidated, "First name was not validated")
+        XCTAssertTrue(mockSignupModelValidator.isLastNameValidated, "Last name was not validated")
+        XCTAssertTrue(mockSignupModelValidator.isEmailValidated, "Email was not validated")
+        XCTAssertTrue(mockSignupModelValidator.isPasswordValidated, "Password was not validated")
+        XCTAssertTrue(mockSignupModelValidator.isRepeatedPasswordValidated, "Did not validate if passwords match")
     }
 }
