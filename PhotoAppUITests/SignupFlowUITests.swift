@@ -42,6 +42,42 @@ class SignupFlowUITests: XCTestCase {
         XCTAssertTrue(signupButton.isEnabled, "Signup button is not enabled for user interactions.")
 
     }
+    
+    
+    func testSignupViewController_WhenInvalidFormSubmitted_PresentsErrorAlertDialog() {
+        
+        //Arrange
+        let app = XCUIApplication()
+        app.launch()
+        
+        let firstName = app.textFields["firstNameTextField"]
+        firstName.tap()
+        firstName.typeText("M")
+        
+        let lastName = app.textFields["lastNameTextField"]
+        lastName.tap()
+        lastName.typeText("B")
+        
+        let email = app.textFields["emailTextField"]
+        email.tap()
+        email.typeText("@")
+        
+        let password = app.secureTextFields["passwordTextField"]
+        password.tap()
+        password.typeText("1234")
+        
+        let repeatPassword = app.secureTextFields["repeatPasswordTextField"]
+        repeatPassword.tap()
+        repeatPassword.typeText("14")
+        
+        let signupButton = app.buttons["Signup"]
+        
+        //Act
+        signupButton.tap()
+
+        //Assert
+        XCTAssertTrue(app.alerts["errorAlertDialog"].waitForExistence(timeout: 1), "An Error Alert dialog was not presented when invalid signup from was submitted.")
+    }
 
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
