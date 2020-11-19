@@ -90,6 +90,8 @@
 		465CE7942562AEEC007F3C7C /* SignupError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupError.swift; sourceTree = "<group>"; };
 		465CE7A32562BA19007F3C7C /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		46B8391D2566DF5700EBA62C /* PhotoApp-UITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-UITestPlan.xctestplan"; sourceTree = "<group>"; };
+		46B839212566E0F000EBA62C /* PhotoApp-UnitTestsPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-UnitTestsPlan.xctestplan"; sourceTree = "<group>"; };
+		46B839222566E12700EBA62C /* PhotoApp-MainTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-MainTestPlan.xctestplan"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		462F31A7255A9EE600A7D099 = {
 			isa = PBXGroup;
 			children = (
+				46B839222566E12700EBA62C /* PhotoApp-MainTestPlan.xctestplan */,
 				462F31B2255A9EE600A7D099 /* PhotoApp */,
 				462F31C9255A9EE700A7D099 /* PhotoAppTests */,
 				462F31D4255A9EE800A7D099 /* PhotoAppUITests */,
@@ -154,6 +157,7 @@
 		462F31C9255A9EE700A7D099 /* PhotoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				46B839212566E0F000EBA62C /* PhotoApp-UnitTestsPlan.xctestplan */,
 				465CE79D2562B014007F3C7C /* Signup */,
 				462F31CC255A9EE700A7D099 /* Info.plist */,
 			);

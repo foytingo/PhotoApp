@@ -30,8 +30,14 @@
       codeCoverageEnabled = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:PhotoAppUITests/PhotoApp-UITestPlan.xctestplan"
+            reference = "container:PhotoAppUITests/PhotoApp-UITestPlan.xctestplan">
+         </TestPlanReference>
+         <TestPlanReference
+            reference = "container:PhotoApp-MainTestPlan.xctestplan"
             default = "YES">
+         </TestPlanReference>
+         <TestPlanReference
+            reference = "container:PhotoAppTests/PhotoApp-UnitTestsPlan.xctestplan">
          </TestPlanReference>
       </TestPlans>
       <Testables>

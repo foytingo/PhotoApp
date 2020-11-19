@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "DD70647A-3DCA-496C-AF25-FD5E6CAB7B08",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:PhotoApp.xcodeproj",
+        "identifier" : "462F31C5255A9EE700A7D099",
+        "name" : "PhotoAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}
