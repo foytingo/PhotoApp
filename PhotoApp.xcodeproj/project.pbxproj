@@ -12,7 +12,7 @@
 		462F31BB255A9EE600A7D099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462F31B9255A9EE600A7D099 /* Main.storyboard */; };
 		462F31BD255A9EE700A7D099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462F31BC255A9EE700A7D099 /* Assets.xcassets */; };
 		462F31C0255A9EE700A7D099 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462F31BE255A9EE700A7D099 /* LaunchScreen.storyboard */; };
-		462F31D6255A9EE800A7D099 /* PhotoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462F31D5255A9EE800A7D099 /* PhotoAppUITests.swift */; };
+		462F31D6255A9EE800A7D099 /* SignupFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462F31D5255A9EE800A7D099 /* SignupFlowUITests.swift */; };
 		462F31EA255AC0D600A7D099 /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462F31E9255AC0D600A7D099 /* SignupFormModelValidatorTests.swift */; };
 		462F31F2255AC19A00A7D099 /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462F31F1255AC19A00A7D099 /* SignupFormModelValidator.swift */; };
 		462F31F7255ACA5100A7D099 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462F31F6255ACA5100A7D099 /* SignupConstants.swift */; };
@@ -65,7 +65,7 @@
 		462F31C6255A9EE700A7D099 /* PhotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		462F31CC255A9EE700A7D099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		462F31D1255A9EE800A7D099 /* PhotoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		462F31D5255A9EE800A7D099 /* PhotoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITests.swift; sourceTree = "<group>"; };
+		462F31D5255A9EE800A7D099 /* SignupFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFlowUITests.swift; sourceTree = "<group>"; };
 		462F31D7255A9EE800A7D099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		462F31E9255AC0D600A7D099 /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
 		462F31F1255AC19A00A7D099 /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 		462F31D4255A9EE800A7D099 /* PhotoAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				462F31D5255A9EE800A7D099 /* PhotoAppUITests.swift */,
+				462F31D5255A9EE800A7D099 /* SignupFlowUITests.swift */,
 				462F31D7255A9EE800A7D099 /* Info.plist */,
 			);
 			path = PhotoAppUITests;
@@ -453,7 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				462F31D6255A9EE800A7D099 /* PhotoAppUITests.swift in Sources */,
+				462F31D6255A9EE800A7D099 /* SignupFlowUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

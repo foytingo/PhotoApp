@@ -7,7 +7,7 @@
 
 import XCTest
 
-class PhotoAppUITests: XCTestCase {
+class SignupFlowUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,13 +22,25 @@ class PhotoAppUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func testSignupViewController_WhenViewLoaded_RequiredUIElementsAreEnabled() throws {
+
         let app = XCUIApplication()
         app.launch()
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let firstName = app.textFields["First name"]
+        let lastName = app.textFields["Last name"]
+        let email = app.textFields["Email"]
+        let password = app.secureTextFields["Password"]
+        let repeatPassword = app.secureTextFields["Repeat Password"]
+        let signupButton = app.buttons["Signup"]
+                
+        XCTAssertTrue(firstName.isEnabled, "First name UITextField is not enabled for user interactions.")
+        XCTAssertTrue(lastName.isEnabled, "Last name UITextField is not enabled for user interactions.")
+        XCTAssertTrue(email.isEnabled, "Email UITextField is not enabled for user interactions.")
+        XCTAssertTrue(password.isEnabled, "Password UITextField is not enabled for user interactions.")
+        XCTAssertTrue(repeatPassword.isEnabled, "Repeat Password UITextField is not enabled for user interactions.")
+        XCTAssertTrue(signupButton.isEnabled, "Signup button is not enabled for user interactions.")
+
     }
 
     func testLaunchPerformance() throws {
