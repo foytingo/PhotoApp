@@ -89,6 +89,7 @@
 		465CE78F2562AE9E007F3C7C /* SingupResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingupResponseModel.swift; sourceTree = "<group>"; };
 		465CE7942562AEEC007F3C7C /* SignupError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupError.swift; sourceTree = "<group>"; };
 		465CE7A32562BA19007F3C7C /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		46B8391D2566DF5700EBA62C /* PhotoApp-UITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-UITestPlan.xctestplan"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +163,7 @@
 		462F31D4255A9EE800A7D099 /* PhotoAppUITests */ = {
 			isa = PBXGroup;
 			children = (
+				46B8391D2566DF5700EBA62C /* PhotoApp-UITestPlan.xctestplan */,
 				462F31D5255A9EE800A7D099 /* SignupFlowUITests.swift */,
 				462F31D7255A9EE800A7D099 /* Info.plist */,
 			);
